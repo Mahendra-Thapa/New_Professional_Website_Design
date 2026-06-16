@@ -268,7 +268,7 @@ export function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5">
             <img
-              src="/src/assets/logo.png"
+              src="/logo.png"
               alt="MSP Logo"
               width={50}
               height={50}
