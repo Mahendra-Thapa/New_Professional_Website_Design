@@ -1,0 +1,491 @@
+# Complete MSP Solution Homepage Content Structure
+
+Website: [MSP Solution](https://www.mspsolution.com.np?utm_source=chatgpt.com)
+
+---
+
+# 1. HEADER
+
+### Logo
+
+MSP Solution Logo
+
+### Navigation Menu
+
+* Home
+* About Us
+* Services
+* Products
+* Career
+* Blogs
+* Contact
+
+### CTA
+
+* Get Started / Contact
+
+---
+
+# 2. HERO SECTION
+
+![Image](https://images.openai.com/static-rsc-4/mVzkJYIMc6_7J5dlV4e9bGP4cZif3tWA2L4QD4ihVaYjGJZKXNhmtHkRdHZ7F6eTSebvkvmMnfUaQD-dKaNyBwLmvH238NiL2RS0-MqL9TMJ1cnhgi-FBNS7rLX87ucR3H_xvKpV-_lsfPFpXHydmwMd7oEwj0CKNJ7hJ2WjZ3IS7DHtdWpdJSjfJkWi3mQB?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/NYLhoYPY1Wk0IyfuEBmCij3o-yQxv_xuXrt0nC3aPmstB_jrvlsDTkkHKRHGPzjt7_x4IqYWe9gKEaImyESofzOw1VFbsiABUteMTL7ryfOxEDln0wOryBvVeeWbbtaVFJrwJqpv4U4R5YNV5uKr5GnuwZU52_52_kMC68VLNWF9qvg6jibw-34WEq74xoA4?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/-DFvK91XZtvL4SfaFVAiBvv-yRsE15a1BdTPiD6JcCShR6JCAoJofIW08T1BuY1h5WHD4poVlI8yu4uxZWBU3QSc0YhTujFMi3oL5pdW8-nlUzAXcxg8G7mjGOd1bnFruohyhEDhedxELn2DKFuxRR4ce75BTnKwDO8Ym5qI2bj4LbBxB6LJKRlC3pHg4pmu?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/yLlrlb2IAVCnUwssTGie1evsuZhzVzwuhBEvaQ9dh_DjmZYiQ1XOCAQG01y9V1PPkIcTWL-zUGozBP18IvPsSsm7xvBv6CURk94OTu6DhsgNaWYGwUcHn8uVCmRr_v2Z1YBO3rxNEbPQzoIikuzpKr38Xfq5YIzTRRD566ufRMwC8OaAUmPZB2WbSZLY-Tfj?purpose=fullsize)
+
+### Slide 1
+
+#### Welcome To MSP Solution
+
+### Driving digital success with innovative IT solutions.
+
+With a focus on customization and scalability, we tailor our services to meet your unique needs. ([mspsolution.com.np][1])
+
+#### CTA
+
+Explore More
+
+---
+
+### Slide 2
+
+#### Welcome To MSP Solution
+
+### Achieve the best tech & digital experiences with IT solutions.
+
+We develop effective plans to move your customers' behavior. ([mspsolution.com.np][1])
+
+#### CTA
+
+Explore More
+
+---
+
+# Hero Visual Assets
+
+### Images Used
+
+* Corporate IT Team
+* Business Technology Team
+* Cloud Technology Illustration
+* Digital Transformation Graphics
+
+### Decorative Elements
+
+* Blue Gradient Background
+* Floating Shapes
+* Wave Patterns
+* Abstract Tech Graphics
+* Light Particles
+* Circular Shapes
+
+---
+
+# 3. ABOUT COMPANY SECTION
+
+## About Our Company
+
+### We Deal with the Aspects of Professional IT Services
+
+MSP Solution is a Nepal-based IT company providing expert IT services, website development, software development, cloud solutions, networking services, and digital transformation services. The company focuses on delivering functional digital products with strong business, design, and technology integration. ([mspsolution.com.np][1])
+
+### CTA
+
+More Information
+
+---
+
+## Statistics
+
+### Counter Cards
+
+| Metric                 | Value |
+| ---------------------- | ----- |
+| Years of Establishment | 4+    |
+| Happy Clients          | 275+  |
+| Employees              | 22+   |
+| Solutions              | 30+   |
+
+([mspsolution.com.np][2])
+
+---
+
+### Images Used
+
+![Image](https://images.openai.com/static-rsc-4/0qpjX7PCXeA_KM2qklLlWpOdeUBJHRXiD_sK0Tx4WFb_fCS87rPCSXvFcdEZz8K8bUBnEO9KMQpdkUgllsk7wyf86_pqHWrsf-K9R4cRP_1vKHmW4hY_QjNG1elYSXcx-UPCwplwtPB93Z981XJQzBhIp-r5Plm4e4FdwgoF5hUVoxpGNs3QCg01uY5kgj89?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/2SucOnPRN1nL3T6zhzuKzsa1lMS7ttVpfdvtS2jR56AMltIjOCj-eJYlU5YXlwa-6xEgEtFNMWVQtVbAKTyCURhsm0FuCj28D1gP820GB7COti_7pQxmWOSRVQPmqVDdEl_xkv0oL4KIqKHhsjY6IKEZTDMR6pzODdHIfElvhASIcGH4VROqkQ2-wQ-zbFlL?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/cqv9lLIzFkEUMnKAjPFdv6T8JXlJ2K4laVHXYjyqx4rItbMnMS19Zm4Ue3cdwQhkWo2TTipnYVzOXH-uNJxZoyh1URY0ccNJs1Z44pH282BYSfvhs_S1iFfQX_-h0vBNBuL9HYk9Dy6L-GReZJzbvMilEfw0Muql972CH-LqHsqKPVabXbLNh6u_PKWgIpac?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/IhVz883h9G5yKrFueBig0Ej4pTltJO2n3kakxiqJs1GlurJVx1s3NqKsvYnnGbC6O7avExurgwyx0rFKV6iJVL6BdzqhNZ35JGMOdhiEntZrmSwCF6-viHXJf46YNcPZKuG7zUfJ5HZJEfaRDxicoxh8Fo0Fnv22ub7U-gg0xnwNhCxpYimT_9My8D0Dszkj?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/irYQTVsgu2EOf8FJD2MiM_OC_qtQtdOg0NJbxzsTg1srJ_P1ilB7OwDRIAkQnJSyj_tNva3RTr0rtK0hMeay2eKkM9-0KnyCZrLDOSPrm4jBdIWdSBTEgAKobWmteICAfYN3JldtEa4DPu6z0aJpUnOk94IOJe-QKwoP8Uykkx_L9KRL4r_Wp85mcGIRfwkR?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/DOWFYGPQWCh___AxbcdQG235Ynl4djdLHPQyAbJF2ioINPWrrsItsTin1uf7H7-jxSnTzqvVDDM73FO3TEuNJTq076JBjDPPbcnDHLDTxv-QKzezQdA9bIzS51D1EnsoUSHUzjMRSwesgHYrGcVQxIq5AXaB4qeu1Hz_mrif0_Jd6Xxr9pqhfgDgZOJvqRXZ?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/7fH3nJfb9YKQlzmvpHVV98hrLMYg1kg8IaB4zOch7d5XDGcCesc9PUBt_DwgojEvrfigZfnrLAHbz05FNUQfgGBOfUUaOpvJ_qXJiStmAD9kW8hc_jV7ljHvFaxDiGzjGdx7OIKEj3dJESixZ93PAV637osPhq5MWSq_IYmy7KQ20rU3QKC0AzmVkOBbqy9X?purpose=fullsize)
+
+---
+
+# 4. SERVICES SECTION
+
+## Our Solutions
+
+### MSP Provides You Better Services
+
+([mspsolution.com.np][1])
+
+---
+
+## Service Card 1
+
+### Software Development
+
+MSP Solution develops reliable and aesthetically pleasing websites using the greatest coding practices and cutting-edge collaboration platforms. ([mspsolution.com.np][1])
+
+### Image
+
+* Coding Laptop
+* Developer Workspace
+
+### CTA
+
+View More
+
+---
+
+## Service Card 2
+
+### Cloud Integration
+
+A popular on-demand network access strategy gaining traction among businesses and organizations. ([mspsolution.com.np][1])
+
+### Image
+
+* Cloud Server Illustration
+* Data Flow Graphics
+
+### CTA
+
+View More
+
+---
+
+## Service Card 3
+
+### Web Development
+
+Custom website and web application development solutions. ([mspsolution.com.np][1])
+
+### Image
+
+* Browser Mockup
+* Responsive Website Screens
+
+### CTA
+
+View More
+
+---
+
+# 5. TECHNOLOGY SECTION
+
+## Expertise
+
+### Key Technologies Empowering Our Success
+
+([mspsolution.com.np][1])
+
+### Technology Categories
+
+* All
+* Web Development
+* App Development
+* Backend
+* Hosting
+
+---
+
+### Technology Logos
+
+Likely Technologies Displayed
+
+* React
+* Next.js
+* Node.js
+* Java
+* PostgreSQL
+* GraphQL
+* AWS
+* Docker
+* Linux
+
+---
+
+# 6. TEAM SECTION
+
+## Our Team
+
+### Meet Our BOD & Executives
+
+Our expert team is the heart of our success, blending diverse skills and creativity while delivering innovative solutions. ([mspsolution.com.np][1])
+
+---
+
+### Team Members
+
+#### Roshan Bhusal
+
+Founder / Chairman
+
+#### Susan Shrestha
+
+Co-Founder / CFO
+
+#### Gyanendra Saud
+
+Executive Director / COO
+
+#### Gaurav Khatiwada
+
+CTO / DevOps Engineer
+
+([mspsolution.com.np][1])
+
+---
+
+### Images Used
+
+![Image](https://images.openai.com/static-rsc-4/kdsZti94HX92PPH7MnVz-DgPwavrOcb7pxo8Ng9jXp8eXz0Pc3v36AuwUiumc4iGPBe5AtwXccE9Mb9gN35svzO2xyVvFPBg5_SryKtU6zBORYpgdP4KOdqqZbLrG2xsFMbFCbrf1MnXyZLEAwBfijSLVGNXgxW68ZpYJW77vG2TpyS1mgzXqjSVNcCSfPQE?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/bhyR-SDotbHr44KKHS2aV-6Q2FDQrufXQxKKFzv6a5Yxxtg0kNsAKzOfdPtdv2y5mjD2DZKtZb5zkMpAkHbwZG2jLuYbL5TFNPKI86Yi8A-LwbqwWs_0wfh4m0LQCVELzKgmpgOZ2TPmB64ttqxW3hvvTugHZlPW_6IuuDeFySYZiw4JXCjvfkhtb3gI1kIz?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/uYFcEPYkQaG1iB6-tmF_iIKGiMuJHqgWa2p2ZmXfWYDvBFdFG865vWsr85zlSIXyRfhis8JAE580yOtdPho06ELWcsFJ-XnW-ksbE-wiqg0DPIBxqlxnqJ52cKKJzvT1P_2l6rwicH_zfUEA-wfodAvYQyA_5-PyNAzPyj257-UL48jfhkEAcV6bTL3I-OxI?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/yHJ35Chpgcqjqw5xgMkpN-5zFb0yyIyDxYYIztlND3LFNjypUZz0eVKmgTtv3INbqVmMx9E1vWqufgAcHfURKBOQ_aLicZCuds7iUeKR_k1XTYSPSso6WMpRsELxn1ypdYSTz5GQIdIlLDnl0lZpm4tcxNaxe4ZTvUUXpAfxuQcc5UKcpF7l2ogMgbHG20GL?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/j3gmILT8aOBgQLrcrkAon-2xg3pT6m-Ja5VLmSiYm5Hev0xWYPk9rjYUEEsslJkiGnuJamdEFyIqTaWjV67ckN8wCG_NpPSlPE5Rc0ZoEMFgzUYvgX1FRSzEZZqHOBaJV_rJFxKIsicFelIH8eU68DeJSMJbsS_v1El-9IB2L4uB34ulHxVzgYSdFonkoVx0?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/ruoKAlr2as4vpx43GvcDIPjARO8zfG0baXBkCw2cXlmnFzmRED72iPqcUwQ32LVZy8D0V0kUxD5XalWqLAULIhL3eDQBIPkb5I7Nos_7-BPmbv5XIObAj8ocTjxmeKnw2m44cYVgQzLjjam-JdgXuPcCjtcb4zKFq_MKy6IpeBmo143FGv6Lq1Wgx9K0IGto?purpose=fullsize)
+
+---
+
+# 7. CLIENTS SECTION
+
+## Few of Our Valuable Clients
+
+The homepage contains approximately 36 client logos displayed in a carousel/grid format. ([mspsolution.com.np][1])
+
+### Visual Elements
+
+* Client Logo Grid
+* Auto Scrolling Carousel
+* Hover Animation
+
+---
+
+# 8. TESTIMONIAL SECTION
+
+## What Our Customers Are Saying
+
+([mspsolution.com.np][1])
+
+### Testimonials
+
+#### Bishnu Maharjan
+
+CEO / Devanasoft
+
+Cloud services improved productivity, efficiency, and collaboration. ([mspsolution.com.np][1])
+
+#### Subash Katel
+
+Fashion Nepal
+
+Website development helped improve e-commerce growth. ([mspsolution.com.np][1])
+
+#### Govinda Bhusal
+
+Founder / Forward Khabar
+
+Successful development of an online news portal. ([mspsolution.com.np][1])
+
+#### Dr. Suman Thapaliya
+
+Texas College of Management IT
+
+Positive experience with AWS cloud services. ([mspsolution.com.np][1])
+
+#### Dr. Pawan Kumar Sharma
+
+CEO / Envision Nepal
+
+Reliable IT services and technical support. ([mspsolution.com.np][1])
+
+---
+
+# 9. FAQ SECTION
+
+## Common Frequently Asked Questions
+
+Questions:
+
+1. Why should I choose your company?
+2. How do you ensure data security?
+3. Do you handle large-scale projects?
+4. What services do you offer?
+5. How do I get started with your services?
+
+([mspsolution.com.np][1])
+
+---
+
+# 10. BLOG SECTION
+
+## Our Latest Popular Blogs
+
+### Featured Blog
+
+#### स्थानीय तहमा लोकप्रिय बन्दै "गुनासो" मोबाइल एप
+
+Date:
+२०८१ असार २८
+
+CTA:
+Read More
+
+([mspsolution.com.np][1])
+
+---
+
+### Blog Images
+
+* Blog Thumbnail
+* News Cover Image
+* Municipality App Promotion Image
+
+---
+
+# 11. FINAL CTA SECTION
+
+![Image](https://images.openai.com/static-rsc-4/NO7iZEPrQ6x-4-rAIDvPBbcHFhfCl5aIygO42g7JGHQoYV-O3cT0AliEu9IEiFwPzjFSdj54rOahXc6di4HdRFLQJBkCbsC0nqm-LwXbBp-rg8HY6ltCfdVSlRRviZANJjmMwyqyEVhnSkdjdXu1djNdTl3-25KnLSe49ZcfZi4v8B5v1T2ttF4PvN0hfwsr?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/mg-J6xPUhYOMTR8G4Notp_k5Sd66iGspduiLdCWCECa2IuUAZ-p25wwuzzQIZo13QlTecjwBoYA6QfNUmJfH0Xsi9fyaTBUwzxmCn4-7g9ZeXbpv3jPhLZxKQc1E-2-4BePsj7e9lDpmSjsp3bTHJ38kIfCXqMkOxKTiG-NYbXRuxsjLvi5hCWA1BC6y-z1B?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/xi0MB76zK-JdmaOHIvC2HWdU0tlET2kCB8N8sR_nn409RJEcaKByn08ylhndXstGQSkzLwY1xVCZ89QhaTIy9L6ejKVaVYTCdCuZlwNBAp5FfymAWs6gA0ByfF5_V7sSnq5h20p7n5rY85nSID51Lg3sGKjt7y3gKFMoXNFKeYS5-5_Ncdt6ckcbLV5E9Wra?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/I3aT7DB8S0XeLtrKbmaktQbbmUE-XHf3VNcklQJGbfYsGGu5EC4ZSkFsAPmaiq4ikyZOBhKRvMIr7LLPJEtyjq0pYUZJzr7qfBm0naSOWXIs-6tW6Aacs5VJ2XJ5nh1KJ_bq0LwnBXT4gmhSqfNuO1vm_XtlJ6YCjMwQ9EKJ2iim6b9HEsprOVDZG3KQAFXk?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/nMYXhxyWjswuv_zoFXN7Ct3YG17O_9cHpR4KRpF9J_ieIZxLSM5ALW6tS4DhqhAxNpow4wRogY8k0ONy20miJE9FJBYYuYrAOnJSma0UR2lFbYO6s0-fd5q_OVK9Bb8QJJfhdEMwgzAvP_4mYX4T9di6LEIHAzoMPZwAwN_wxggEI9CK7yHN7a6sdqdzu-2h?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/PefI7bMauJccULMEDQGQ7sYZ6zxdIW5s7FTSUjtrV0HZNqMPokPNTM-poqJR8BPWg8dSSwiu9rfwje9JavN0VohKxHfmmpLthMiO2tv7HwefKlEnAsD7UWDYGBYtD9Q6JGXD-8Zp2bXKXvwdMq7zIw0aTnff5xHSj8dS0Jbz_1-c89QfWus_DVpHxgXl198m?purpose=fullsize)
+
+## Explore Our Services
+
+We can help you turn your ideas into reality if you have any.
+
+### CTA
+
+Start Your Project
+
+### Headline
+
+Achieve the best tech & digital experiences
+
+### Description
+
+With a focus on customization and scalability, we tailor our services to meet your unique needs. ([mspsolution.com.np][1])
+
+---
+
+# 12. FOOTER
+
+## Quick Links
+
+* Home
+* About Us
+* Career
+* FAQs
+* Blogs
+* Contact
+
+([mspsolution.com.np][1])
+
+---
+
+## Our Solutions
+
+* Cloud Services
+* Digital Marketing
+* Ecommerce Development
+* Email Services
+* Networking Services
+* Software Development
+
+([mspsolution.com.np][1])
+
+---
+
+## Contact Information
+
+📍 Subidhanagar, Tinkune, Kathmandu
+
+📧 [info@mspsolution.com.np](mailto:info@mspsolution.com.np)
+
+📞 9867143463
+
+📞 9865837534
+
+📞 9861848861
+
+🇺🇸 +1 (214) 499-3889
+
+([mspsolution.com.np][1])
+
+---
+
+# Total Assets Used on Homepage
+
+### Images
+
+* 2 Hero Banner Images
+* 1 About Section Image
+* 3 Service Images
+* 6 Technology Logos
+* 4 Executive Photos
+* 36 Client Logos
+* 5 Testimonial Photos
+* 4 Blog Images
+* 1 CTA Illustration
+
+### Illustrations
+
+* Cloud Computing
+* Software Development
+* Web Development
+* Digital Transformation
+* Business Growth
+* Technology Network Graphics
+
+### Videos
+
+* No embedded videos on homepage. ([mspsolution.com.np][1])
+
+### Animations
+
+* Hero Slider
+* Counter Animation
+* Team Carousel
+* Client Logo Carousel
+* Testimonial Slider
+* Hover Effects
+* FAQ Accordion Animation ([mspsolution.com.np][1])
+
+This is the complete homepage content inventory and asset breakdown that can be directly used to redesign the MSP Solution website in Figma.
+
+[1]: https://www.mspsolution.com.np/?utm_source=chatgpt.com "MSP Solution"
+[2]: https://mspsolution.com.np/about?utm_source=chatgpt.com "MSP Solution"
