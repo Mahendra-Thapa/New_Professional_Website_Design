@@ -60,7 +60,7 @@ export function About() {
           </motion.div>
         </div>
          {/* ── StatCard ── */}
-            <div className="grid grid-cols-4 mx-auto max-w-7xl  gap-4 mb-8 pt-12 px-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto max-w-7xl gap-4 mb-8 pt-12 px-6">
               {STATS.map((s) => <StatCard key={s.label} {...s} />)}
             </div>
       </section>

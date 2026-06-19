@@ -6,48 +6,48 @@ import { PageHero, CTABanner, SectionLabel } from "../components/Shared";
 // ── DATA ──────────────────────────────────────────────────────────────────────
 
 const EXECUTIVES = [
-  { name: "Roshan Bhusal",    role: "Founder / Chairman",       img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
-  { name: "Susan Shrestha",   role: "Co-Founder / CFO",         img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
-  { name: "Gyanendra Saud",   role: "Executive Director / COO", img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
-  { name: "Kshitij Bishokarma", role: "CTO / ShofyDrop Lead",  img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
+  { name: "Roshan Bhusal", role: "Founder / Chairman", img: "/team/roshan.jpg" },
+  { name: "Susan Shrestha", role: "Co-Founder / CFO", img: "/team/susan.jpg" },
+  { name: "Gyanendra Saud", role: "Executive Director / COO", img: "/team/gyanu.png" },
+  { name: "Kshitij Bishokarma", role: "CTO / ShofyDrop Lead", img: "/team/Kshitiz.png" },
 ];
 
 const DEPARTMENTS: { label: string; bg: "white" | "soft"; members: { name: string; role: string; img: string }[] }[] = [
   {
     label: "Cloud Team", bg: "white",
     members: [
-      { name: "Gaurav Khatiwada", role: "DevOps Engineer",  img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
-      { name: "Arbin Sapkota",    role: "Cloud Engineer",   img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
+      { name: "Gaurav Khatiwada", role: "DevOps Engineer", img: "/team/Gaurav.png" },
+      { name: "Arbin Sapkota", role: "Cloud Engineer", img: "/team/Arbin.png" },
     ],
   },
   {
     label: "Frontend Team", bg: "soft",
     members: [
-      { name: "Mahendra Thapa",   role: "Frontend Lead",        img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
-      { name: "Nishant Adhikari", role: "Associate Developer",  img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
-      { name: "Sangam Magar",     role: "Associate Developer",  img: "https://images.unsplash.com/photo-1488161628813-04466f872be2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
+      { name: "Mahendra Thapa", role: "Frontend Lead", img: "/team/Mahendra.png" },
+      { name: "Nishant Adhikari", role: "Associate Developer", img: "/team/nishant.png" },
+      { name: "Sangam Magar", role: "Associate Developer", img: "/team/sangam.jpg" },
     ],
   },
   {
     label: "Backend Team", bg: "white",
     members: [
-      { name: "Ram Kumar Gautam", role: "Java Developer",           img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
-      { name: "Deepak Rana",      role: "Java Developer",           img: "https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
-      { name: "Bhimsen Basnet",   role: "Java Associate Developer", img: "https://images.unsplash.com/photo-1595152772835-219674b2a163?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
+      { name: "Ram Kumar Gautam", role: "Java Developer", img: "/team/Ram.png" },
+      { name: "Deepak Rana", role: "Java Developer", img: "/team/deepak.jpg" },
+      { name: "Bhimsen Basnet", role: "Java Associate Developer", img: "/team/bhim.png" },
     ],
   },
   {
     label: "UI/UX & Flutter Team", bg: "soft",
     members: [
-      { name: "Rakesh Shrestha", role: "UI/UX Designer",    img: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
-      { name: "Aawhan Karki",    role: "Flutter Developer", img: "https://images.unsplash.com/photo-1563237023-b1e970526dcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
+      { name: "Rakesh Shrestha", role: "UI/UX Designer", img: "/team/rakesh.png" },
+      { name: "Aawhan Karki", role: "Flutter Developer", img: "/team/hjur.png" },
     ],
   },
   {
     label: "Legal & Audit Team", bg: "white",
     members: [
-      { name: "Ramesh Kunwar",  role: "Legal Advisor", img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
-      { name: "Padam Bhattarai", role: "Auditor",      img: "https://images.unsplash.com/photo-1543132220-3ec99c6094dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
+      { name: "Ramesh Kunwar", role: "Legal Advisor", img: "/team/Ramesh.jpg" },
+      { name: "Padam Bhattarai", role: "Auditor", img: "/team/padam.png" },
     ],
   },
 ];
@@ -111,8 +111,8 @@ export function Team() {
         <div className="max-w-4xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-4 gap-8">
           {[
             { value: "14+", label: "Team Members" },
-            { value: "6",   label: "Departments" },
-            { value: "4+",  label: "Years Together" },
+            { value: "6", label: "Departments" },
+            { value: "4+", label: "Years Together" },
             { value: "30+", label: "Projects Delivered" },
           ].map(({ value, label }, i) => (
             <motion.div
