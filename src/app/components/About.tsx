@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { CheckCircle2, Users, Award, TrendingUp } from "lucide-react";
 
 const highlights = [
-  "Founded in Kathmandu, Nepal with a vision to modernize local business IT",
+  "Founded in Kathmandu, Nepal with a vision to modernize local business IT Nepal",
   "Team of 50+ certified IT engineers and developers",
   "Serving SMEs, corporations, and government institutions",
   "Official partners with Microsoft, Cisco, and AWS",
