@@ -13,6 +13,7 @@ import { TechGrid } from "../components/TechGrid";
 import { ClientMarquee } from "../components/ClientMarquee";
 import { SectionLabel, Counter } from "../components/Shared";
 import { Cloud, Globe } from "lucide-react";
+import { CLIENT_NAMES } from "../data";
 
 // ── DATA ──────────────────────────────────────────────────────────────────────
 
@@ -46,32 +47,33 @@ const HOME_SERVICES = [
 
 const TECH_TABS = ["All", "Web Development", "App Development", "Backend", "Hosting"];
 const TECHNOLOGIES = [
-  { name: "React",      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",                tabs: ["All", "Web Development"] },
-  { name: "Next.js",   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",              tabs: ["All", "Web Development"] },
-  { name: "Node.js",   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",              tabs: ["All", "Backend"] },
-  { name: "Java",      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",                  tabs: ["All", "Backend", "App Development"] },
-  { name: "PostgreSQL",icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",      tabs: ["All", "Backend"] },
-  { name: "GraphQL",   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",               tabs: ["All", "Backend"] },
-  { name: "AWS",       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg", tabs: ["All", "Hosting"] },
-  { name: "Docker",    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",              tabs: ["All", "Hosting", "Backend"] },
-  { name: "Linux",     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",                tabs: ["All", "Hosting"] },
+  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", tabs: ["All", "Web Development"] },
+  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg", tabs: ["All", "Web Development"] },
+  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg", tabs: ["All", "Backend"] },
+  { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg", tabs: ["All", "Backend"] },
+  { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg", tabs: ["All", "Backend"] },
+  { name: "GraphQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg", tabs: ["All", "Backend"] },
+  { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg", tabs: ["All", "Hosting"] },
+  { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg", tabs: ["All", "Hosting", "Backend"] },
+  { name: "Linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg", tabs: ["All", "Hosting"] },
+  { name: "Flutter", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg", tabs: ["All", "App Development"] },
+  { name: "Laravel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg", tabs: ["All", "Backend"] }
 ];
 
 const TEAM = [
-  { name: "Roshan Bhusal", role: "Founder / Chairman", img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
-  { name: "Susan Shrestha", role: "Co-Founder / CFO", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
-  { name: "Gyanendra Saud", role: "Executive Director / COO", img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
-  { name: "Gaurav Khatiwada", role: "CTO / DevOps Engineer", img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" },
+  { name: "Roshan Bhusal", role: "Founder / Chairman", img: "/team/roshan.jpg" },
+  { name: "Susan Shrestha", role: "Co-Founder / CFO", img: "/team/susan.jpg" },
+  { name: "Gyanendra Saud", role: "Executive Director / COO", img: "/team/gyanu.png" },
+  { name: "Kshitij Bishokarma", role: "CTO / ShofyDrop Lead", img: "/team/Kshitiz.png" },
 ];
 
-const CLIENT_NAMES = ["TechNepal", "CloudBase", "InnovateCo", "DataSync", "WebForge", "NetBridge", "PixelCraft", "CodeLabs", "SkyHost", "AppWorks", "DevStream", "InfoTech", "CyberEdge", "SmartIT", "DigiFlow", "NepTech", "EasyPay", "SwiftNet", "DataBridge", "CoreSoft"];
 
 const TESTIMONIALS = [
-  { name: "Bishnu Maharjan", role: "CEO / Devanasoft", review: "Cloud services improved productivity, efficiency, and collaboration. MSP Solution truly understands enterprise IT needs.", stars: 5 },
-  { name: "Subash Katel", role: "Fashion Nepal", review: "Website development helped improve our e-commerce growth significantly. Professional team with great communication.", stars: 5 },
-  { name: "Govinda Bhusal", role: "Founder / Forward Khabar", review: "Successful development of our online news portal. The team delivered on time with excellent quality.", stars: 5 },
-  { name: "Dr. Suman Thapaliya", role: "Texas College of Management IT", review: "Positive experience with AWS cloud services. Migration was smooth and the support team is always available.", stars: 5 },
-  { name: "Dr. Pawan Kumar Sharma", role: "CEO / Envision Nepal", review: "Reliable IT services and technical support. MSP Solution is our trusted technology partner.", stars: 5 },
+  { name: "Bishnu Maharjan", role: "CEO / Devanasoft", review: "I can't express how transformative MSP's cloud services have been for our business. The seamless integration and scalable solutions have streamlined our operations and boosted our productivity. Their expert team was with us every step of the way, ensuring a smooth transition. We've seen remarkable improvements in efficiency and collaboration. Highly recommend!", stars: 5 },
+  { name: "Subash Katel", role: "Fashion Nepal", review: "MSP Solution helped us elevate our online presence with their expertise in building our website. We are experiencing significant growth in our e-commerce platform. Their attention to detail and timely delivery exceeded our expectations. We highly recommend MSP for anyone looking to boost their online business.", stars: 5 },
+  { name: "Govinda Bhusal", role: "Founder / Forward Khabar", review: "Thanks to MSP Solution, our online news portal is thriving. They built our website with expertise and dedication, paving the way for our success. We are grateful for MSP Solutions for their exceptional service and support.", stars: 5 },
+  { name: "Dr. Suman Thapaliya", role: "Texas College of Management IT", review: "I am incredibly impressed with MSP Solution's AWS cloud services. Their cutting-edge technology, seamless integration, and excellent customer support made the whole experience exceptional. I highly recommend them to anyone looking for reliable cloud solutions.", stars: 5 },
+  { name: "Dr. Pawan Kumar Sharma", role: "CEO / Envision Nepal", review: "I am beyond impressed with MSP Solution's top-notch IT services. Their team is highly knowledgeable and always provides quick and efficient solutions. My company's efficiency has improved significantly since partnering with them. I highly recommend MSP Solution for all your IT needs.", stars: 5 },
 ];
 
 const FAQS = [
@@ -112,7 +114,7 @@ function Hero() {
       <AnimatePresence mode="wait">
         <motion.div key={current} initial={{ opacity: 0, scale: 1.04 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.9 }} className="absolute inset-0">
           <img src={slide.img} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0D47A1]/92 via-[#0D47A1]/72 to-[#0D47A1]/30" />
+          <div className="absolute inset-0 " />
         </motion.div>
       </AnimatePresence>
       <div className="absolute top-24 right-16 w-72 h-72 rounded-full bg-[#FF6F00]/12 blur-3xl pointer-events-none" />
@@ -187,17 +189,17 @@ function About() {
             ))}
           </div>
 
-         
+
 
           <Link to="/about" className="inline-flex items-center gap-2 bg-[#0D47A1] hover:bg-[#1565C0] text-white font-bold px-7 py-3.5 rounded-xl transition-all hover:shadow-lg hover:shadow-blue-200">
             More Information <ArrowRight size={16} />
           </Link>
         </motion.div>
       </div>
-       {/* ── StatCard ── */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto max-w-7xl gap-4 mb-8 pt-12 px-6">
-                    {STATS.map((s) => <StatCard key={s.label} {...s} />)}
-                  </div>
+      {/* ── StatCard ── */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-auto max-w-7xl gap-4 mb-8 pt-12 px-6">
+        {STATS.map((s) => <StatCard key={s.label} {...s} />)}
+      </div>
     </section>
   );
 }
@@ -215,7 +217,7 @@ function WhyUs() {
           {WHY_US.map(({ icon: Icon, title, desc }, i) => (
             <motion.div key={title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
               className="bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-colors">
-              <div className="w-12 h-12 rounded-xl bg-[#FF6F00]/20 border border-[#FF6F00]/30 flex items-center justify-center mb-4">
+              <div className="w-12 h-12 rounded-xl bg-white mb-4 flex items-center justify-center">
                 <Icon className="text-[#FF6F00]" size={22} />
               </div>
               <h3 className="text-white font-bold text-base mb-2">{title}</h3>

@@ -14,6 +14,7 @@ import { Technology } from "./pages/Technology";
 import { Team } from "./pages/Team";
 import { FAQ } from "./pages/FAQ";
 import { Blog } from "./pages/Blog";
+import { BlogDetail } from "./pages/BlogDetail";
 import { Career } from "./pages/Career";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
@@ -42,6 +43,7 @@ export const router = createBrowserRouter([
       { path: "team", Component: Team },
       { path: "faq", Component: FAQ },
       { path: "blog", Component: Blog },
+      { path: "blog/:slug", Component: BlogDetail },
       { path: "career", Component: Career },
       { path: "contact", Component: Contact },
       { path: "*", Component: NotFound },

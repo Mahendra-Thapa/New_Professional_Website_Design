@@ -77,15 +77,18 @@ export function Contact() {
         </div>
       </section>
 
-      {/* Map placeholder */}
+      {/* Map section */}
       <section className="bg-[#F8FAFF] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="rounded-2xl overflow-hidden border border-[#E2EAF4] shadow-sm h-72 bg-[#E8F0FE] flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="text-[#0D47A1] mx-auto mb-3" size={36} />
-              <p className="text-[#0D47A1] font-bold text-lg">Subidhanagar, Tinkune, Kathmandu</p>
-              <p className="text-[#5A7098] text-sm mt-1">MSP Solution Pvt. Ltd.</p>
-            </div>
+          <div className="rounded-2xl overflow-hidden border border-[#E2EAF4] shadow-sm h-[400px] bg-[#E8F0FE]">
+            <iframe
+              title="MSP Solution Location Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.2113708307297!2d85.3428371!3d27.6832794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb195daf226305%3A0x3ab09dd0441b9068!2sMSP%20Solution%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1718960000000!5m2!1sen!2snp"
+              className="w-full h-full border-0"
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>

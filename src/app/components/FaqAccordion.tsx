@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Plus, Minus } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 export interface FaqItem {
   q: string;
@@ -34,7 +34,7 @@ export function FaqAccordion({ items, defaultOpen = null }: Props) {
           >
             <span className={`font-semibold text-sm ${open === i ? "text-[#0D47A1]" : "text-[#0A1628]"}`}>{q}</span>
             <span className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${open === i ? "bg-[#0D47A1] text-white" : "bg-[#F8FAFF] text-[#5A7098]"}`}>
-              {open === i ? <Minus size={13} /> : <Plus size={13} />}
+              {open === i ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
             </span>
           </button>
           <AnimatePresence>
