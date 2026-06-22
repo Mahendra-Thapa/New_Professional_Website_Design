@@ -18,6 +18,7 @@ import { BlogDetail } from "./pages/BlogDetail";
 import { Career } from "./pages/Career";
 import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
+import { Products } from "./pages/Products";
 
 export const router = createBrowserRouter([
   {
@@ -39,6 +40,8 @@ export const router = createBrowserRouter([
           { path: "ecommerce", Component: ServicePage_ecommerce },
         ],
       },
+      { path: "products", Component: Products },
+      { path: "projects", Component: Products },
       { path: "technology", Component: Technology },
       { path: "team", Component: Team },
       { path: "faq", Component: FAQ },

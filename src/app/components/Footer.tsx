@@ -9,9 +9,8 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2.5 mb-5">
               <div className="w-9 h-9 rounded-lg bg-[#0D47A1] border border-blue-700 flex items-center justify-center">
-                <span className="text-white font-bold text-xs">MSP</span>
+                <img src="/logo.png" alt="MSP Solution" width={50} height={50} />
               </div>
-              <span className="font-bold text-white text-lg">MSP Solution</span>
             </div>
             <p className="text-white/45 text-sm leading-relaxed mb-6">
               Expert IT services helping businesses prosper and expand. Driving digital success with innovative solutions from Kathmandu, Nepal.
@@ -28,7 +27,7 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-white text-xs uppercase tracking-widest mb-5">Quick Links</h4>
             <ul className="flex flex-col gap-3">
-              {[["Home", "/"], ["About", "/about"], ["FAQ", "/faq"], ["Contact", "/contact"]].map(([l, p]) => (
+              {[["Home", "/"], ["About", "/about"], ["Products", "/products"], ["FAQ", "/faq"], ["Contact", "/contact"]].map(([l, p]) => (
                 <li key={l}>
                   <Link to={p} className="text-white/45 hover:text-[#FF6F00] text-sm transition-colors flex items-center gap-1.5">
                     <ChevronRight size={11} className="text-[#FF6F00]/50" />{l}

@@ -14,6 +14,7 @@ import { ClientMarquee } from "../components/ClientMarquee";
 import { SectionLabel, Counter } from "../components/Shared";
 import { Cloud, Globe } from "lucide-react";
 import { CLIENT_NAMES } from "../data";
+import { ProductsSection } from "../components/ProductsSection";
 
 // ── DATA ──────────────────────────────────────────────────────────────────────
 
@@ -277,6 +278,9 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      {/* Products Section */}
+      <ProductsSection />
 
       <WhyUs />
 

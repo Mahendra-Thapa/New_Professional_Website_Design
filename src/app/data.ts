@@ -4,6 +4,7 @@ export const NAV_LINKS = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
   { label: "Services", path: "/services" },
+  { label: "Products", path: "/products" },
   { label: "Resources", path: "/resources" },
   { label: "FAQ", path: "/faq" },
   { label: "Contact", path: "/contact" },
@@ -501,3 +502,190 @@ export const SERVICE_PAGES = [
     gradient: "from-orange-600 to-red-600",
   },
 ];
+
+// ── PRODUCTS & PROJECTS DATA ──────────────────────────────────────────────────
+
+export interface Product {
+  slug: string;
+  name: string;
+  tag: string; // e.g. "Web & Mobile", "Web", "Mobile"
+  desc: string;
+  tech: string[];
+  link?: string;
+  img: string;
+}
+
+export const PRODUCTS: Product[] = [
+  {
+    slug: "shofydrop",
+    name: "ShofyDrop",
+    tag: "Web & Mobile",
+    desc: "A multi-vendor grocery and e-commerce platform that enables businesses to create stores, manage products, process orders, and provide real-time delivery tracking for customers.",
+    tech: ["Next.js", "Java", "PostgreSQL"],
+    link: "https://shofydrop.com/",
+    img: ""
+  },
+  {
+    slug: "karyantra",
+    name: "Karyantra",
+    tag: "Web & Mobile",
+    desc: "A digital service marketplace that connects customers with verified service providers across education, health, IT, hospitality, travel, and other sectors with secure booking and service management.",
+    tech: ["Next.js", "Node.js", "Express", "PostgreSQL", "GraphQL"],
+    link: "https://karyantra.com/",
+    img: ""
+  },
+  {
+    slug: "esuchana-application",
+    name: "Esuchana Application",
+    tag: "Web & Mobile",
+    desc: "A municipal communication platform that helps residents report issues, access information, and improve interaction between citizens and local government authorities.",
+    tech: ["React", "Java", "PostgreSQL"],
+    link: "https://gulmikaligandaki.gunasho.com/",
+    img: ""
+  },
+  {
+    slug: "living-care",
+    name: "Living Care",
+    tag: "Web",
+    desc: "An agriculture and e-commerce platform that promotes natural products, supports local farmers, and provides online retail and bulk ordering services.",
+    tech: ["Flutter", "Java", "AWS", "Next.js", "PostgreSQL"],
+    link: "https://amalabotonline.com/",
+    img: ""
+  },
+  {
+    slug: "moksha",
+    name: "Moksha Astrology",
+    tag: "Mobile",
+    desc: "A Vedic astrology platform providing personalized astrology readings, birth chart analysis, Vastu consultation, and mobile-based guidance services.",
+    tech: ["Flutter", "Java", "AWS", "Next.js", "PostgreSQL"],
+    link: "https://mokshaastro.com/",
+    img: ""
+  },
+  {
+    slug: "etech",
+    name: "E-Tech International",
+    tag: "Web",
+    desc: "An IT solutions platform providing networking, cybersecurity, cloud solutions, datacenter services, and technology products for businesses and organizations.",
+    tech: ["Next.js", "Java", "PostgreSQL", "AWS"],
+    link: "https://etechintl.com.np/home/",
+    img: ""
+  },
+  {
+    slug: "rotary-club-tripureswar",
+    name: "Rotary Club of Tripureswar",
+    tag: "Web",
+    desc: "A professional website developed to showcase organization activities, information, events, and community initiatives.",
+    tech: ["WordPress", "PHP", "MySQL"],
+    link: "",
+    img: ""
+  },
+  {
+    slug: "forward-nepal",
+    name: "Forward Nepal",
+    tag: "Web",
+    desc: "A non-profit organization website focused on sustainable development, poverty reduction, agriculture, community empowerment, and social inclusion programs.",
+    tech: ["WordPress", "PHP", "MySQL"],
+    link: "https://forwardnepal.com.np/",
+    img: ""
+  },
+  {
+    slug: "kagosida",
+    name: "KAGOSIDA",
+    tag: "Web",
+    desc: "A trade association platform providing gold and silver market updates, industry information, member services, and training initiatives.",
+    tech: ["React.js", "Java", "PostgreSQL"],
+    link: "https://kagosida.org.np/",
+    img: ""
+  },
+  {
+    slug: "awaaz-kendra",
+    name: "Aawaz Kendra",
+    tag: "Web",
+    desc: "A non-profit organization website supporting awareness, advocacy, and services related to women and child protection.",
+    tech: ["WordPress", "PHP", "MySQL"],
+    link: "https://awaazkendra.com/",
+    img: ""
+  },
+  {
+    slug: "all-nepal-khabar",
+    name: "All Nepal Khabar",
+    tag: "Web",
+    desc: "A Nepali news portal providing national and international news, politics, business, technology, entertainment, sports, and cultural updates.",
+    tech: ["WordPress", "PHP", "MySQL"],
+    link: "https://allnepalkhabar.com/",
+    img: ""
+  },
+  {
+    slug: "sanchar-patra",
+    name: "Sanchar Patra",
+    tag: "Web",
+    desc: "A Nepali digital news platform delivering current affairs, opinions, features, entertainment, and informative articles.",
+    tech: ["WordPress", "PHP", "MySQL"],
+    link: "https://sancharpatra.com/",
+    img: ""
+  },
+  {
+    slug: "devana-soft",
+    name: "Devana Soft",
+    tag: "Web",
+    desc: "A fintech technology company website focused on digital financial solutions including agriculture, remittance, insurance, and payment systems.",
+    tech: ["Next.js"],
+    link: "https://www.devanasoft.com.np/",
+    img: ""
+  },
+  {
+    slug: "kantipur-security",
+    name: "Kantipur Security",
+    tag: "Web",
+    desc: "A corporate website for a leading private security company providing security services, staffing, facility management, and training solutions.",
+    tech: ["WordPress", "PHP", "MySQL"],
+    link: "https://amalabotonline.com/",
+    img: ""
+  },
+  {
+    slug: "msp-academy",
+    name: "MSP Academy",
+    tag: "Web",
+    desc: "An educational platform connecting learners, creators, and professionals through practical learning and technology-driven education.",
+    tech: ["Next.js"],
+    link: "https://mspacademy.co",
+    img: ""
+  },
+  {
+    slug: "mentor-lab-nepal",
+    name: "Mentor Lab Nepal",
+    tag: "Web",
+    desc: "An ed-tech and IT company website providing technology solutions, CRM solutions, and educational services.",
+    tech: ["WordPress", "PHP", "MySQL"],
+    link: "https://mentorlabnepal.com/",
+    img: ""
+  },
+  {
+    slug: "forward-khabar",
+    name: "Forward Khabar",
+    tag: "Web",
+    desc: "A modern news portal covering current events, politics, business, technology, culture, and sports.",
+    tech: ["WordPress", "PHP", "MySQL"],
+    link: "https://forwardkhabar.com/",
+    img: ""
+  },
+  {
+    slug: "batika-news",
+    name: "Batika News",
+    tag: "Web",
+    desc: "A digital news platform delivering updated information and analysis across multiple categories.",
+    tech: ["WordPress", "PHP", "MySQL"],
+    link: "https://batikanews.com/",
+    img: ""
+  },
+  {
+    slug: "amalambot",
+    name: "Amalambot",
+    tag: "Web",
+    desc: "A contemporary news and information platform providing articles and updates on various topics.",
+    tech: ["WordPress", "PHP", "MySQL"],
+    link: "https://amalabotonline.com/",
+    img: ""
+  }
+];
+
