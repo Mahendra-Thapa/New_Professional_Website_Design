@@ -231,7 +231,7 @@ export function Navbar() {
               </div>
               <div className="flex items-center gap-4">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/mspsolutions2078"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#FF6F00] transition-colors"
@@ -239,7 +239,7 @@ export function Navbar() {
                   <Facebook size={16} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/msp-solution-pvt-ltd/posts/?feedView=all"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#FF6F00] transition-colors"
@@ -247,7 +247,7 @@ export function Navbar() {
                   <Linkedin size={16} />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/mspsolutions2078/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#FF6F00] transition-colors"

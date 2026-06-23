@@ -37,8 +37,13 @@ export function Contact() {
             </div>
 
             <div className="flex gap-3">
-              {[Facebook, Linkedin, Instagram, Youtube].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-xl bg-[#F8FAFF] border border-[#E2EAF4] hover:bg-[#0D47A1] hover:border-[#0D47A1] hover:text-white text-[#5A7098] flex items-center justify-center transition-all">
+              {[
+                { Icon: Facebook, href: "https://www.facebook.com/mspsolutions2078" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/company/msp-solution-pvt-ltd/posts/?feedView=all" },
+                { Icon: Instagram, href: "https://www.instagram.com/mspsolutions2078/" },
+                { Icon: Youtube, href: "https://www.youtube.com" },
+              ].map(({ Icon, href }, i) => (
+                <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-[#F8FAFF] border border-[#E2EAF4] hover:bg-[#0D47A1] hover:border-[#0D47A1] hover:text-white text-[#5A7098] flex items-center justify-center transition-all">
                   <Icon size={15} />
                 </a>
               ))}

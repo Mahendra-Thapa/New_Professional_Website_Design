@@ -65,11 +65,16 @@ function MemberCard({ name, role, img, delay = 0 }: { name: string; role: string
                  hover:shadow-xl hover:shadow-blue-100/50 hover:-translate-y-1.5 transition-all duration-300"
     >
       {/* Square photo — full width, fixed height */}
-      <div className="relative w-full h-56 overflow-hidden">
+      <div className="relative w-full h-[300px] overflow-hidden">
         <img
           src={img}
           alt={name}
-          className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+          className="
+          w-full h-full 
+          object-cover
+          group-hover:scale-110
+          transition duration-700
+          "
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0D47A1]/80 via-[#0D47A1]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         {/* Social icons on photo hover */}
@@ -156,9 +161,7 @@ export function Team() {
               <h2 className="text-2xl md:text-3xl font-bold text-[#0A1628]">
                 Our <span className="text-[#0D47A1]">{label}</span>
               </h2>
-              <p className="text-[#5A7098] text-sm mt-2">
-                {members.length} {members.length === 1 ? "Member" : "Members"}
-              </p>
+
             </div>
 
             {/* Cards — centred regardless of count */}
@@ -178,25 +181,107 @@ export function Team() {
       ))}
 
       {/* Culture */}
-      <section className="py-20 bg-[#0D47A1] relative overflow-hidden">
+      <section className="py-20 bg-[#F8FAFF] relative overflow-hidden">
         <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-white/5 pointer-events-none" />
         <div className="absolute -bottom-24 -right-24 w-80 h-80 rounded-full bg-[#FF6F00]/12 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 relative z-10">
+
           <SectionHeader
             label="Our Culture"
             dark
-            heading={<>What Drives Our <span className="text-[#FF6F00]">Team Forward</span></>}
+            labelClassName="!text-[#0D47A1] !bg-[#0D47A1]/10 !border-[#0D47A1]/20"
+            heading={
+              <>
+                <span className="text-gray-900">
+                  What Drives Our{" "}
+                </span>
+                <span className="text-[#FF6F00]">
+                  Team Forward
+                </span>
+              </>
+            }
           />
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
             {[
-              { num: "01", title: "Collaboration First", desc: "Engineering, design, and strategy working as one — aligned to deliver the best outcomes for every client." },
-              { num: "02", title: "Continuous Learning", desc: "Investing in certifications, workshops, and hands-on experimentation to stay ahead of industry trends." },
-              { num: "03", title: "Client Obsession", desc: "Every decision filtered through one question: does this create more value for our clients?" },
+              {
+                num: "01",
+                title: "Collaboration First",
+                desc: "Engineering, design, and strategy working together as one team to create meaningful solutions and exceptional client experiences.",
+              },
+              {
+                num: "02",
+                title: "Continuous Learning",
+                desc: "We grow through experimentation, innovation, certifications, and knowledge sharing to stay ahead of technology trends.",
+              },
+              {
+                num: "03",
+                title: "Client Obsession",
+                desc: "Every decision starts with one goal — creating measurable value and long-term success for our clients.",
+              },
             ].map(({ num, title, desc }) => (
-              <div key={num} className="bg-white/10 border border-white/15 rounded-2xl p-7 text-center hover:bg-white/15 transition-colors">
-                <span className="text-5xl font-bold text-white/10 block mb-4">{num}</span>
-                <h3 className="font-bold text-white text-lg mb-3">{title}</h3>
-                <p className="text-white/60 text-sm leading-relaxed">{desc}</p>
+              <div
+                key={num}
+                className="
+            group relative
+            bg-white
+            border border-gray-100
+            rounded-3xl
+            p-8
+            shadow-sm
+            hover:shadow-xl
+            hover:-translate-y-2
+            transition-all duration-300
+          "
+              >
+
+                {/* Number */}
+                <div
+                  className="
+              w-16 h-16
+              rounded-2xl
+              bg-[#FF6F00]/10
+              flex items-center justify-center
+              mb-6
+              group-hover:bg-[#FF6F00]
+              transition-all duration-300
+            "
+                >
+                  <span
+                    className="
+                text-2xl font-bold 
+                text-[#FF6F00]
+                group-hover:text-white
+                transition
+              "
+                  >
+                    {num}
+                  </span>
+                </div>
+
+
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  {title}
+                </h3>
+
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  {desc}
+                </p>
+
+
+                {/* Bottom Accent */}
+                <div
+                  className="
+              absolute bottom-0 left-8 right-8
+              h-1
+              rounded-full
+              bg-[#FF6F00]
+              scale-x-0
+              group-hover:scale-x-100
+              transition-transform duration-300
+              origin-left
+            "
+                />
+
               </div>
             ))}
           </div>

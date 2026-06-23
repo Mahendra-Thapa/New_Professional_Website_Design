@@ -207,22 +207,48 @@ function About() {
 
 function WhyUs() {
   return (
-    <section className="py-20 bg-[#0D47A1] relative overflow-hidden">
+    <section className="py-14 bg-[#0D47A1] relative overflow-hidden">
+      {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-white/5" />
-        <div className="absolute -bottom-24 -right-24 w-80 h-80 rounded-full bg-[#FF6F00]/12" />
+        <div className="absolute -top-24 -left-24 w-64 sm:w-80 lg:w-96 h-64 sm:h-80 lg:h-96 rounded-full bg-white/5" />
+        <div className="absolute -bottom-24 -right-24 w-56 sm:w-72 lg:w-80 h-56 sm:h-72 lg:h-80 rounded-full bg-[#FF6F00]/12" />
       </div>
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <SectionHeader label="Why Choose Us" heading={<>Built for Your <span className="text-[#FF6F00]">Business Success</span></>} dark />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+        {/* Header */}
+        <SectionHeader
+          label="Why Choose Us"
+          heading={
+            <>
+              Built for Your <span className="text-[#FF6F00]">Business Success</span>
+            </>
+          }
+          dark
+        />
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 mt-10 sm:mt-12">
           {WHY_US.map(({ icon: Icon, title, desc }, i) => (
-            <motion.div key={title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-              className="bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-colors">
-              <div className="w-12 h-12 rounded-xl bg-white mb-4 flex items-center justify-center">
-                <Icon className="text-[#FF6F00]" size={22} />
+            <motion.div
+              key={title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="h-full bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-5 sm:p-6 hover:bg-white/15 transition-colors flex flex-col"
+            >
+              <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-white mb-4 flex items-center justify-center mx-auto">
+                <Icon className="text-[#FF6F00]" size={20} />
               </div>
-              <h3 className="text-white font-bold text-base mb-2">{title}</h3>
-              <p className="text-white/60 text-sm leading-relaxed">{desc}</p>
+
+              <h3 className="text-white font-bold text-sm sm:text-base mb-2 flex items-center justify-center">
+                {title}
+              </h3>
+
+              <p className="text-white/60 text-xs sm:text-sm leading-relaxed text-center">
+                {desc}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -233,7 +259,7 @@ function WhyUs() {
 
 function HomeCTA() {
   return (
-    <section className="py-24 bg-[#0D47A1] relative overflow-hidden">
+    <section className="py-12  bg-[#0D47A1] relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-white/5" />
         <div className="absolute -bottom-24 -right-24 w-80 h-80 rounded-full bg-[#FF6F00]/12" />
@@ -270,7 +296,7 @@ export function Home() {
       <About />
 
       {/* Services — uses ServiceCard */}
-      <section className="py-24 bg-[#F8FAFF]">
+      <section className="py-12  bg-[#F8FAFF]">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeader label="Our Solutions" heading={<>MSP Provides You <span className="text-[#FF6F00]">Better Services</span></>} />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
@@ -285,7 +311,7 @@ export function Home() {
       <WhyUs />
 
       {/* Technology — uses TechGrid */}
-      <section className="py-24 bg-white">
+      <section className="py-12  bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeader label="Expertise" heading={<>Key Technologies <span className="text-[#0D47A1]">Empowering</span> Our Success</>} />
           <TechGrid tabs={TECH_TABS} technologies={TECHNOLOGIES} />
@@ -293,7 +319,7 @@ export function Home() {
       </section>
 
       {/* Team — uses TeamCard */}
-      <section className="py-24 bg-[#F8FAFF]">
+      <section className="py-12  bg-[#F8FAFF]">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeader label="Our Team" heading={<>Meet Our <span className="text-[#0D47A1]">BOD & Executives</span></>} desc="Our expert team is the heart of our success, blending diverse skills and creativity while delivering innovative solutions." />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
@@ -311,7 +337,7 @@ export function Home() {
       </section>
 
       {/* Testimonials — uses TestimonialSlider */}
-      <section className="py-24 bg-[#F8FAFF]">
+      <section className="py-12  bg-[#F8FAFF]">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeader label="Testimonials" heading={<>What Our <span className="text-[#0D47A1]">Customers Are Saying</span></>} />
           <TestimonialSlider testimonials={TESTIMONIALS} />
@@ -319,7 +345,7 @@ export function Home() {
       </section>
 
       {/* FAQ — uses FaqAccordion */}
-      <section className="py-24 bg-white">
+      <section className="py-12  bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <SectionHeader label="FAQ" heading={<>Common <span className="text-[#0D47A1]">Frequently Asked</span> Questions</>} />
           <FaqAccordion items={FAQS} />
@@ -327,7 +353,7 @@ export function Home() {
       </section>
 
       {/* Blog — uses BlogCard */}
-      <section className="py-24 bg-[#F8FAFF]">
+      <section className="py-12  bg-[#F8FAFF]">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeader label="Latest Insights" heading={<>Our Latest <span className="text-[#FF6F00]">Popular Blogs</span></>} />
           <div className="grid md:grid-cols-5 gap-5">

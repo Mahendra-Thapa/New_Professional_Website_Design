@@ -3,17 +3,17 @@ import { motion } from "motion/react";
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router";
 
-export function SectionLabel({ text, dark = false }: { text: string; dark?: boolean }) {
+export function SectionLabel({ text, dark = false, className = "" }: { text: string; dark?: boolean; className?: string }) {
   if (dark) {
     return (
-      <span className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white/80 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+      <span className={`inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white/80 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4 ${className}`}>
         <span className="w-1.5 h-1.5 rounded-full bg-orange-400 inline-block" />
         {text}
       </span>
     );
   }
   return (
-    <span className="inline-flex items-center gap-2 bg-orange-50 border border-orange-200 text-orange-600 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+    <span className={`inline-flex items-center gap-2 bg-orange-50 border border-orange-200 text-orange-600 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4 ${className}`}>
       <span className="w-1.5 h-1.5 rounded-full bg-orange-500 inline-block" />
       {text}
     </span>
@@ -47,10 +47,10 @@ export function Counter({ value }: { value: string }) {
 
 export function PageHero({ title, crumb, bg = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80" }: { title: string; crumb: string; bg?: string }) {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden">
+    <section className="relative pt-48 pb-20 overflow-hidden">
       <div className="absolute inset-0">
         <img src={bg} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0D47A1]/92 via-[#0D47A1]/80 to-[#0D47A1]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0D47A1]/62 via-[#0D47A1]/50 to-[#0D47A1]/30" />
       </div>
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-[#FF6F00]/10 blur-3xl pointer-events-none" />
       <div className="relative z-10 max-w-7xl mx-auto px-6">

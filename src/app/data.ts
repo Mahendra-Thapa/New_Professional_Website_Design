@@ -130,7 +130,7 @@ export const BLOGS: BlogEntry[] = [
     time: "२०८१ असार २८",
     date: "June 28, 2024",
     tag: "E-Commerce",
-    img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80",
+    img: "/projects/shofydrop.png",
     likes: "",
     link: "https://shofydrop.com/",
     author: "MSP Solution Team",
@@ -523,7 +523,7 @@ export const PRODUCTS: Product[] = [
     desc: "A multi-vendor grocery and e-commerce platform that enables businesses to create stores, manage products, process orders, and provide real-time delivery tracking for customers.",
     tech: ["Next.js", "Java", "PostgreSQL"],
     link: "https://shofydrop.com/",
-    img: ""
+    img: "/projects/shofydrop.png"
   },
   {
     slug: "karyantra",

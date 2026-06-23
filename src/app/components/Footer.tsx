@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="bg-[#0A1628] text-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10">
           <div>
             <div className="flex items-center gap-2.5 mb-5">
               <div className="w-9 h-9 rounded-lg bg-[#0D47A1] border border-blue-700 flex items-center justify-center">
@@ -16,8 +16,13 @@ export function Footer() {
               Expert IT services helping businesses prosper and expand. Driving digital success with innovative solutions from Kathmandu, Nepal.
             </p>
             <div className="flex gap-3">
-              {[Facebook, Linkedin, Instagram, Youtube].map((Icon, i) => (
-                <a key={i} href="#" className="w-9 h-9 rounded-lg bg-white/6 hover:bg-[#0D47A1] border border-white/10 hover:border-[#0D47A1] flex items-center justify-center text-white/45 hover:text-white transition-all">
+              {[
+                { Icon: Facebook, href: "https://www.facebook.com/mspsolutions2078" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/company/msp-solution-pvt-ltd/posts/?feedView=all" },
+                { Icon: Instagram, href: "https://www.instagram.com/mspsolutions2078/" },
+                { Icon: Youtube, href: "https://www.youtube.com" },
+              ].map(({ Icon, href }, i) => (
+                <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-white/6 hover:bg-[#0D47A1] border border-white/10 hover:border-[#0D47A1] flex items-center justify-center text-white/45 hover:text-white transition-all">
                   <Icon size={13} />
                 </a>
               ))}
