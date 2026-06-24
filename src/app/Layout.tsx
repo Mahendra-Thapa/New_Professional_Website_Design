@@ -1,6 +1,7 @@
 import { Outlet } from "react-router";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import { Toaster } from "sonner";
 
 export function Layout() {
   return (
@@ -10,6 +11,8 @@ export function Layout() {
         <Outlet />
       </main>
       <Footer />
+      <Toaster position="top-right" richColors />
     </div>
   );
 }
+

@@ -1,8 +1,90 @@
+import { useState } from "react";
 import { motion } from "motion/react";
-import { MapPin, Mail, Phone, Globe, Facebook, Linkedin, Instagram, Youtube, ArrowRight } from "lucide-react";
+import { MapPin, Mail, Phone, Globe, Facebook, Linkedin, Instagram, Youtube, ArrowRight, Loader2 } from "lucide-react";
 import { SectionLabel, PageHero } from "../components/Shared";
+import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
+
+const EMAILJS_SERVICE_ID = "service_xs8nk7c";
+const EMAILJS_TEMPLATE_ID = "template_b441o0d";
+const EMAILJS_PUBLIC_KEY = "zXoCwE-5el3ZC__AI";
 
 export function Contact() {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: ""
+  });
+  const [isSending, setIsSending] = useState(false);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // Basic Validation
+    if (!formData.fullName.trim()) {
+      toast.error("Please enter your full name.");
+      return;
+    }
+    if (!formData.email.trim()) {
+      toast.error("Please enter your email address.");
+      return;
+    }
+    if (!formData.message.trim()) {
+      toast.error("Please enter your message.");
+      return;
+    }
+
+    if (
+      EMAILJS_SERVICE_ID === "service_xs8nk7c" ||
+      EMAILJS_TEMPLATE_ID === "template_b441o0d" ||
+      EMAILJS_PUBLIC_KEY === "zXoCwE-5el3ZC__AI"
+    ) {
+      toast.warning("EmailJS is not fully configured. Please configure service ID, template ID, and public key in your environment variables.", {
+        duration: 8000
+      });
+    }
+
+    setIsSending(true);
+
+    try {
+      const templateParams = {
+        from_name: formData.fullName,
+        reply_to: formData.email,
+        phone_number: formData.phone,
+        subject: formData.subject,
+        message: formData.message,
+      };
+
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_PUBLIC_KEY
+      );
+
+      toast.success("Your message has been sent successfully!");
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast.error("Failed to send the message. Please check your EmailJS configurations.");
+    } finally {
+      setIsSending(false);
+    }
+  };
+
   return (
     <>
       <PageHero title="Contact Us" crumb="Contact" bg="https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80" />
@@ -51,31 +133,82 @@ export function Contact() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-            <form className="bg-[#F8FAFF] border border-[#E2EAF4] rounded-2xl p-8 flex flex-col gap-5">
+            <form onSubmit={handleSubmit} className="bg-[#F8FAFF] border border-[#E2EAF4] rounded-2xl p-8 flex flex-col gap-5">
               <h3 className="text-xl font-bold text-[#0A1628] mb-1">Send Us a Message</h3>
               <div className="grid sm:grid-cols-2 gap-4">
-                {["Full Name", "Email Address"].map((p) => (
-                  <div key={p}>
-                    <label className="text-xs font-semibold text-[#5A7098] uppercase tracking-wide mb-1.5 block">{p}</label>
-                    <input type={p.includes("Email") ? "email" : "text"} placeholder={p}
-                      className="w-full bg-white border border-[#E2EAF4] rounded-xl px-4 py-3 text-sm text-[#0A1628] placeholder:text-[#5A7098]/55 focus:outline-none focus:border-[#0D47A1] transition-colors" />
-                  </div>
-                ))}
-              </div>
-              {["Phone Number", "Subject"].map((p) => (
-                <div key={p}>
-                  <label className="text-xs font-semibold text-[#5A7098] uppercase tracking-wide mb-1.5 block">{p}</label>
-                  <input type="text" placeholder={p}
-                    className="w-full bg-white border border-[#E2EAF4] rounded-xl px-4 py-3 text-sm text-[#0A1628] placeholder:text-[#5A7098]/55 focus:outline-none focus:border-[#0D47A1] transition-colors" />
+                <div>
+                  <label className="text-xs font-semibold text-[#5A7098] uppercase tracking-wide mb-1.5 block">Full Name</label>
+                  <input
+                    type="text"
+                    name="fullName"
+                    value={formData.fullName}
+                    onChange={handleInputChange}
+                    placeholder="Full Name"
+                    className="w-full bg-white border border-[#E2EAF4] rounded-xl px-4 py-3 text-sm text-[#0A1628] placeholder:text-[#5A7098]/55 focus:outline-none focus:border-[#0D47A1] transition-colors"
+                    required
+                  />
                 </div>
-              ))}
+                <div>
+                  <label className="text-xs font-semibold text-[#5A7098] uppercase tracking-wide mb-1.5 block">Email Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    placeholder="Email Address"
+                    className="w-full bg-white border border-[#E2EAF4] rounded-xl px-4 py-3 text-sm text-[#0A1628] placeholder:text-[#5A7098]/55 focus:outline-none focus:border-[#0D47A1] transition-colors"
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="text-xs font-semibold text-[#5A7098] uppercase tracking-wide mb-1.5 block">Phone Number</label>
+                <input
+                  type="text"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  placeholder="Phone Number"
+                  className="w-full bg-white border border-[#E2EAF4] rounded-xl px-4 py-3 text-sm text-[#0A1628] placeholder:text-[#5A7098]/55 focus:outline-none focus:border-[#0D47A1] transition-colors"
+                />
+              </div>
+              <div>
+                <label className="text-xs font-semibold text-[#5A7098] uppercase tracking-wide mb-1.5 block">Subject</label>
+                <input
+                  type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleInputChange}
+                  placeholder="Subject"
+                  className="w-full bg-white border border-[#E2EAF4] rounded-xl px-4 py-3 text-sm text-[#0A1628] placeholder:text-[#5A7098]/55 focus:outline-none focus:border-[#0D47A1] transition-colors"
+                />
+              </div>
               <div>
                 <label className="text-xs font-semibold text-[#5A7098] uppercase tracking-wide mb-1.5 block">Message</label>
-                <textarea rows={5} placeholder="Tell us about your project..."
-                  className="w-full bg-white border border-[#E2EAF4] rounded-xl px-4 py-3 text-sm text-[#0A1628] placeholder:text-[#5A7098]/55 focus:outline-none focus:border-[#0D47A1] transition-colors resize-none" />
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  rows={5}
+                  placeholder="Tell us about your project..."
+                  className="w-full bg-white border border-[#E2EAF4] rounded-xl px-4 py-3 text-sm text-[#0A1628] placeholder:text-[#5A7098]/55 focus:outline-none focus:border-[#0D47A1] transition-colors resize-none"
+                  required
+                />
               </div>
-              <button type="submit" className="w-full bg-[#0D47A1] hover:bg-[#1565C0] text-white font-bold py-4 rounded-xl transition-all hover:shadow-lg hover:shadow-blue-200 flex items-center justify-center gap-2">
-                Send Message <ArrowRight size={16} />
+              <button
+                type="submit"
+                disabled={isSending}
+                className="w-full bg-[#0D47A1] hover:bg-[#1565C0] disabled:bg-[#0D47A1]/60 text-white font-bold py-4 rounded-xl transition-all hover:shadow-lg hover:shadow-blue-200 flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed"
+              >
+                {isSending ? (
+                  <>
+                    Sending... <Loader2 className="animate-spin" size={16} />
+                  </>
+                ) : (
+                  <>
+                    Send Message <ArrowRight size={16} />
+                  </>
+                )}
               </button>
             </form>
           </motion.div>
@@ -100,3 +233,4 @@ export function Contact() {
     </>
   );
 }
+
