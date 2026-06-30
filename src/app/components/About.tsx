@@ -12,7 +12,7 @@ const highlights = [
 const values = [
   { icon: Users, title: "Client-First", desc: "Every decision is driven by our clients' success and long-term growth." },
   { icon: Award, title: "Excellence", desc: "We hold the highest standards in quality, security, and reliability." },
-  { icon: TrendingUp, title: "Innovation", desc: "We stay ahead of technology trends to deliver future-ready solutions here." },
+  { icon: TrendingUp, title: "Innovation", desc: "We stay ahead of technology trends to deliver future-ready solutions." },
 ];
 
 export function About() {
