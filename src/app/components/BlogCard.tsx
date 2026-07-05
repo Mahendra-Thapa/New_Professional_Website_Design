@@ -16,7 +16,7 @@ interface Props {
 }
 
 const heights: Record<NonNullable<Props["variant"]>, string> = {
-  featured: "h-64",
+  featured: "h-6",
   medium: "h-48",
   small: "h-36",
 };
