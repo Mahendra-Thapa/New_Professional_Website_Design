@@ -313,17 +313,17 @@ export const BLOGS: BlogEntry[] = [
 ];
 
 export const CLIENT_NAMES = [
-  "/client/clientCompany1.png",
+  "/client/clientCompany1.jpg",
   "/client/clientCompany2.png",
   "/client/clientCompany3.png",
   "/client/clientCompany4.png",
-  "/client/clientCompany5.png",
+  "/client/clientCompany5.jpg",
   "/client/clientCompany6.png",
   "/client/clientCompany7.png",
   "/client/clientCompany8.png",
-  "/client/clientCompany9.png",
+  "/client/clientCompany9.jpg",
   "/client/clientCompany10.jpeg",
-  "/client/clientCompany11.png",
+  "/client/clientCompany11.jpg",
   "/client/clientCompany12.png",
   "/client/clientCompany13.png",
   "/client/clientCompany14.png",

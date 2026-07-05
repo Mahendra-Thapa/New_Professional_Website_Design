@@ -23,12 +23,12 @@ export function ClientMarquee({ clients, speed = 30 }: Props) {
         {doubled.map((src, i) => (
           <div
             key={i}
-            className="flex-shrink-0 px-6 py-4 bg-white border border-[#E2EAF4] rounded-2xl hover:border-[#0D47A1]/30 hover:shadow-md hover:shadow-blue-100/40 transition-all flex items-center justify-center h-20 w-40"
+            className="flex-shrink-0 flex items-center justify-center h-16 w-36 px-2"
           >
             <img
               src={src}
               alt={`Client Logo ${i}`}
-              className="max-h-full max-w-full object-contain transition-all duration-300"
+              className="max-h-full max-w-full object-contain hover:scale-110 transition-transform duration-300"
             />
           </div>
         ))}

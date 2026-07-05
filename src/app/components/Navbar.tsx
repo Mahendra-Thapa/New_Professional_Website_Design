@@ -234,7 +234,7 @@ export function Navbar() {
                   href="https://www.facebook.com/mspsolutions2078"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#FF6F00] transition-colors"
+                  className="hover:text-blue-500 transition-colors"
                 >
                   <Facebook size={16} />
                 </a>
@@ -242,7 +242,7 @@ export function Navbar() {
                   href="https://www.linkedin.com/company/msp-solution-pvt-ltd/posts/?feedView=all"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#FF6F00] transition-colors"
+                  className="hover:text-blue-500 transition-colors"
                 >
                   <Linkedin size={16} />
                 </a>
@@ -250,7 +250,7 @@ export function Navbar() {
                   href="https://www.instagram.com/mspsolutions2078/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#FF6F00] transition-colors"
+                  className="hover:text-pink-500 transition-colors"
                 >
                   <Instagram size={16} />
                 </a>
