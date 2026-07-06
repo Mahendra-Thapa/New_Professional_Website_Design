@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "motion/react";
 import { CheckCircle2, Users, Award, TrendingUp } from "lucide-react";
 

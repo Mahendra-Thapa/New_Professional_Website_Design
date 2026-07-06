@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "motion/react";
 import { Clock, Headphones, ShieldCheck, Star, Cpu, Users } from "lucide-react";
 

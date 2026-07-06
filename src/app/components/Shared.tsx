@@ -1,7 +1,8 @@
+"use client";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { ChevronRight } from "lucide-react";
-import { Link } from "react-router";
+import Link from "next/link";
 
 export function SectionLabel({ text, dark = false, className = "" }: { text: string; dark?: boolean; className?: string }) {
   if (dark) {
@@ -57,7 +58,7 @@ export function PageHero({ title, crumb, bg = "https://images.unsplash.com/photo
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{title}</h1>
           <div className="flex items-center gap-2 text-sm">
-            <Link to="/" className="text-white/60 hover:text-[#FF6F00] transition-colors">Home</Link>
+            <Link href="/" className="text-white/60 hover:text-[#FF6F00] transition-colors">Home</Link>
             <ChevronRight size={14} className="text-white/40" />
             <span className="text-[#FF6F00] font-semibold">{crumb}</span>
           </div>
@@ -85,10 +86,10 @@ export function CTABanner() {
           We can help you turn your ideas into reality — customization and scalability focus built for your unique business needs.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Link to="/contact" className="inline-flex items-center gap-2 bg-[#FF6F00] hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl transition-all hover:shadow-xl hover:shadow-orange-500/30 hover:-translate-y-0.5">
+          <Link href="/contact" className="inline-flex items-center gap-2 bg-[#FF6F00] hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl transition-all hover:shadow-xl hover:shadow-orange-500/30 hover:-translate-y-0.5">
             Start Your Project <ChevronRight size={18} />
           </Link>
-          <Link to="/services" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/18 border border-white/25 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
+          <Link href="/services" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/18 border border-white/25 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
             View Services
           </Link>
         </div>

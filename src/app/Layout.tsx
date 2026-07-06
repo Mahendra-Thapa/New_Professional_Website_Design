@@ -1,18 +1,32 @@
-import { Outlet } from "react-router";
+import type { Metadata } from "next";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { Toaster } from "sonner";
+import "../styles/index.css";
 
-export function Layout() {
+export const metadata: Metadata = {
+  title: "MSP Solution - Professional IT & Tech Services",
+  description: "MSP Solution offers comprehensive IT services, software development, and digital transformation for businesses. Contact us: info@mspsolution.com.np | Phone: +977 9867143463 | Subidhanagar, Kathmandu.",
+  keywords: "MSP Solution, IT services, software development, Kathmandu, Subidhanagar, web development, app development",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <div className="min-h-screen bg-background flex flex-col">
-      <Navbar />
-      <main className="flex-1">
-        <Outlet />
-      </main>
-      <Footer />
-      <Toaster position="top-right" richColors />
-    </div>
+    <html lang="en">
+      <body className="antialiased">
+        <div className="min-h-screen bg-background flex flex-col">
+          <Navbar />
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
+          <Toaster position="top-right" richColors />
+        </div>
+      </body>
+    </html>
   );
 }
-

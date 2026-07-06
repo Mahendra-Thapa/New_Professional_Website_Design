@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "motion/react";
 import { Monitor, Code, Network, Shield, Cloud, Smartphone, ArrowRight } from "lucide-react";
 

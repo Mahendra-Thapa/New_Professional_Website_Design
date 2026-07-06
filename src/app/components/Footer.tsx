@@ -1,17 +1,18 @@
-import { Link } from "react-router";
+import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Mail, Phone, Globe, Facebook, Linkedin, Instagram, Youtube, ChevronRight } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="bg-gradient-to-b from-[#0A1628] to-[#050B14] text-white border-t border-white/5">
       <div className="max-w-[1400px] mx-auto px-6 pt-20 pb-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 xl:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 xl:gap-12">
 
           {/* Brand & About */}
-          <div className="lg:col-span-4 lg:pr-6">
+          <div className="md:col-span-2 lg:col-span-4 lg:pr-6">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-14 h-14 rounded-xl  shadow-lg shadow-blue-900/20 border border-blue-600/30 flex items-center justify-center p-1.5">
-                <img src="/logo.png" alt="MSP Solution" className="w-full h-full object-contain rounded-sm" />
+                <Image src="/logo.png" alt="MSP Solution" width={56} height={56} className="w-full h-full object-contain rounded-sm" />
               </div>
               <span className="text-xl font-bold tracking-wide">MSP Solution</span>
             </div>
@@ -42,7 +43,7 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
               {[["Home", "/"], ["About", "/about"], ["Products", "/products"], ["FAQ", "/faq"], ["Contact", "/contact"]].map(([l, p]) => (
                 <li key={l}>
-                  <Link to={p} className="group text-white/60 hover:text-[#FF6F00] text-sm transition-colors flex items-center gap-2">
+                  <Link href={p} className="group text-white/60 hover:text-[#FF6F00] text-sm transition-colors flex items-center gap-2">
                     <ChevronRight size={14} className="text-[#FF6F00]/0 group-hover:text-[#FF6F00] transition-colors -ml-4 group-hover:ml-0 duration-300" />
                     <span className="transform transition-transform duration-300">{l}</span>
                   </Link>
@@ -60,7 +61,7 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
               {[["Team", "/team"], ["Technology", "/technology"], ["Career", "/career"], ["Blog", "/blog"]].map(([l, p]) => (
                 <li key={l}>
-                  <Link to={p} className="group text-white/60 hover:text-[#FF6F00] text-sm transition-colors flex items-center gap-2">
+                  <Link href={p} className="group text-white/60 hover:text-[#FF6F00] text-sm transition-colors flex items-center gap-2">
                     <ChevronRight size={14} className="text-[#FF6F00]/0 group-hover:text-[#FF6F00] transition-colors -ml-4 group-hover:ml-0 duration-300" />
                     <span className="transform transition-transform duration-300">{l}</span>
                   </Link>
@@ -78,7 +79,7 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
               {["Cloud Services", "Digital Marketing", "Ecommerce Development", "Email Services", "Networking Services", "Software Development"].map((l) => (
                 <li key={l}>
-                  <Link to="/services" className="group text-white/60 hover:text-[#FF6F00] text-sm transition-colors flex items-center gap-2">
+                  <Link href="/services" className="group text-white/60 hover:text-[#FF6F00] text-sm transition-colors flex items-center gap-2">
                     <ChevronRight size={14} className="text-[#FF6F00]/0 group-hover:text-[#FF6F00] transition-colors -ml-4 group-hover:ml-0 duration-300" />
                     <span className="transform transition-transform duration-300">{l}</span>
                   </Link>
@@ -88,7 +89,7 @@ export function Footer() {
           </div>
 
           {/* Contact Us */}
-          <div className="lg:col-span-2 sm:col-span-2 lg:col-span-2">
+          <div className="lg:col-span-2">
             <h4 className="font-semibold text-white tracking-wider mb-6 relative inline-block">
               Contact Us
               <span className="absolute -bottom-2 left-0 w-1/2 h-0.5 bg-[#FF6F00] rounded-full"></span>

@@ -1,5 +1,7 @@
+"use client";
 import { useState, useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
 import {
   Menu,
@@ -80,7 +82,7 @@ function ServicesDropdown({ open }: { open: boolean }) {
       {SERVICE_PAGES.map(({ slug, label }) => (
         <Link
           key={slug}
-          to={`/services/${slug}`}
+          href={`/services/${slug}`}
           className="flex items-center gap-3 px-5 py-2.5 hover:bg-[#F8FAFF] transition-colors group"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-[#FF6F00]/60 group-hover:bg-[#FF6F00] transition-colors shrink-0" />
@@ -95,7 +97,7 @@ function ServicesDropdown({ open }: { open: boolean }) {
       ))}
       <div className="px-4 pt-2 pb-1 border-t border-[#E2EAF4] mt-1">
         <Link
-          to="/services"
+          href="/services"
           className="flex items-center justify-center gap-1.5 text-xs font-bold text-[#0D47A1] hover:text-[#FF6F00] transition-colors py-1.5"
         >
           View All Services <ArrowRight size={11} />
@@ -116,7 +118,7 @@ function ResourcesDropdown({ open }: { open: boolean }) {
       {RESOURCE_LINKS.map(({ label, path, icon: Icon, desc }) => (
         <Link
           key={path}
-          to={path}
+          href={path}
           className="flex items-start gap-3 px-4 py-3 hover:bg-[#F8FAFF] transition-colors group mx-1 rounded-xl"
         >
           <div className="w-8 h-8 rounded-lg bg-[#0D47A1]/10 group-hover:bg-[#0D47A1] flex items-center justify-center shrink-0 transition-colors mt-0.5">
@@ -150,7 +152,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [showTopBar, setShowTopBar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const { pathname } = useLocation();
+  const pathname = usePathname();
   const servicesRef = useRef<HTMLDivElement>(null);
   const resourcesRef = useRef<HTMLDivElement>(null);
 
@@ -266,7 +268,7 @@ export function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5">
+          <Link href="/" className="flex items-center gap-2.5">
             <img
               src="/logo.png"
               alt="MSP Logo"
@@ -337,7 +339,7 @@ export function Navbar() {
               return (
                 <Link
                   key={path}
-                  to={path}
+                  href={path}
                   className={`text-sm font-medium transition-colors relative pb-0.5 ${active ? "text-[#0D47A1]" : "text-[#5A7098] hover:text-[#0D47A1]"}`}
                 >
                   {label}
@@ -351,7 +353,7 @@ export function Navbar() {
 
           {/* CTA */}
           <Link
-            to="/contact"
+            href="/contact"
             className="hidden lg:inline-flex items-center gap-2 bg-[#0D47A1] hover:bg-[#1565C0] text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors"
           >
             Get Started <ArrowRight size={14} />
@@ -398,7 +400,7 @@ export function Navbar() {
                             className="overflow-hidden pl-4 flex flex-col gap-1 border-l-2 border-[#0D47A1]/20 ml-1 mb-1"
                           >
                             <Link
-                              to="/services"
+                              href="/services"
                               className="py-1.5 text-xs font-bold text-[#0D47A1]"
                             >
                               All Services
@@ -406,7 +408,7 @@ export function Navbar() {
                             {SERVICE_PAGES.map(({ slug, label: sLabel }) => (
                               <Link
                                 key={slug}
-                                to={`/services/${slug}`}
+                                href={`/services/${slug}`}
                                 className="py-1.5 text-sm text-[#5A7098] hover:text-[#0D47A1]"
                               >
                                 {sLabel}
@@ -444,7 +446,7 @@ export function Navbar() {
                               ({ label: rLabel, path: rPath, icon: Icon }) => (
                                 <Link
                                   key={rPath}
-                                  to={rPath}
+                                  href={rPath}
                                   className="py-2 text-sm text-[#5A7098] hover:text-[#0D47A1] flex items-center gap-2"
                                 >
                                   <Icon size={14} className="text-[#FF6F00]" />
@@ -462,7 +464,7 @@ export function Navbar() {
                 return (
                   <Link
                     key={path}
-                    to={path}
+                    href={path}
                     className={`py-2.5 text-sm font-medium ${pathname === path ? "text-[#0D47A1]" : "text-[#5A7098]"}`}
                   >
                     {label}
@@ -471,7 +473,7 @@ export function Navbar() {
               })}
 
               <Link
-                to="/contact"
+                href="/contact"
                 className="bg-[#0D47A1] text-white text-sm font-semibold px-5 py-2.5 rounded-lg text-center mt-3"
               >
                 Get Started
