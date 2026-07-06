@@ -559,7 +559,7 @@ export const PRODUCTS: Product[] = [
     desc: "A Vedic astrology platform providing personalized astrology readings, birth chart analysis, Vastu consultation, and mobile-based guidance services.",
     tech: ["Flutter", "Java", "AWS", "Next.js", "PostgreSQL"],
     link: "https://mokshaastro.com/",
-    img: ""
+    img: "/projects/mokesha.png"
   },
   {
     slug: "etech",
@@ -568,7 +568,7 @@ export const PRODUCTS: Product[] = [
     desc: "An IT solutions platform providing networking, cybersecurity, cloud solutions, datacenter services, and technology products for businesses and organizations.",
     tech: ["Next.js", "Java", "PostgreSQL", "AWS"],
     link: "https://etechintl.com.np/home/",
-    img: ""
+    img: "/projects/Etech.png"
   },
   {
     slug: "rotary-club-tripureswar",
@@ -595,7 +595,7 @@ export const PRODUCTS: Product[] = [
     desc: "A trade association platform providing gold and silver market updates, industry information, member services, and training initiatives.",
     tech: ["React.js", "Java", "PostgreSQL"],
     link: "https://kagosida.org.np/",
-    img: ""
+    img: "/projects/Kagosita.png"
   },
   {
     slug: "awaaz-kendra",
@@ -613,7 +613,7 @@ export const PRODUCTS: Product[] = [
     desc: "A Nepali news portal providing national and international news, politics, business, technology, entertainment, sports, and cultural updates.",
     tech: ["WordPress", "PHP", "MySQL"],
     link: "https://allnepalkhabar.com/",
-    img: ""
+    img: "/projects/allnepalkhabar.png"
   },
   {
     slug: "sanchar-patra",
@@ -622,7 +622,7 @@ export const PRODUCTS: Product[] = [
     desc: "A Nepali digital news platform delivering current affairs, opinions, features, entertainment, and informative articles.",
     tech: ["WordPress", "PHP", "MySQL"],
     link: "https://sancharpatra.com/",
-    img: ""
+    img: "/projects/sancharpatra.png"
   },
   {
     slug: "devana-soft",
@@ -631,7 +631,7 @@ export const PRODUCTS: Product[] = [
     desc: "A fintech technology company website focused on digital financial solutions including agriculture, remittance, insurance, and payment systems.",
     tech: ["Next.js"],
     link: "https://www.devanasoft.com.np/",
-    img: ""
+    img: "/projects/devanaasoft.png"
   },
   {
     slug: "kantipur-security",
@@ -639,7 +639,7 @@ export const PRODUCTS: Product[] = [
     tag: "Web",
     desc: "A corporate website for a leading private security company providing security services, staffing, facility management, and training solutions.",
     tech: ["WordPress", "PHP", "MySQL"],
-    link: "https://amalabotonline.com/",
+    link: "",
     img: ""
   },
   {
@@ -658,7 +658,7 @@ export const PRODUCTS: Product[] = [
     desc: "An ed-tech and IT company website providing technology solutions, CRM solutions, and educational services.",
     tech: ["WordPress", "PHP", "MySQL"],
     link: "https://mentorlabnepal.com/",
-    img: ""
+    img: "/projects/Mentor.png"
   },
   {
     slug: "forward-khabar",
@@ -676,7 +676,7 @@ export const PRODUCTS: Product[] = [
     desc: "A digital news platform delivering updated information and analysis across multiple categories.",
     tech: ["WordPress", "PHP", "MySQL"],
     link: "https://batikanews.com/",
-    img: ""
+    img: "/projects/batikanews.png"
   },
   {
     slug: "amalambot",
@@ -685,7 +685,7 @@ export const PRODUCTS: Product[] = [
     desc: "A contemporary news and information platform providing articles and updates on various topics.",
     tech: ["WordPress", "PHP", "MySQL"],
     link: "https://amalabotonline.com/",
-    img: ""
+    img: "/projects/Amalambot.png"
   }
 ];
 

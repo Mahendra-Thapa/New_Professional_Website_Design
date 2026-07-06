@@ -1,5 +1,6 @@
+"use client";
 import { motion } from "motion/react";
-import { Link } from "react-router";
+import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -26,7 +27,7 @@ export function ServiceCard({ icon: Icon, title, desc, link, gradient, delay = 0
       </div>
       <h3 className="text-lg font-bold text-[#0A1628] mb-3">{title}</h3>
       <p className="text-[#5A7098] text-sm leading-relaxed mb-5">{desc}</p>
-      <Link to={link} className="inline-flex items-center gap-1.5 text-[#0D47A1] font-semibold text-sm group-hover:gap-3 transition-all">
+      <Link href={link} className="inline-flex items-center gap-1.5 text-[#0D47A1] font-semibold text-sm group-hover:gap-3 transition-all">
         View More <ChevronRight size={14} />
       </Link>
     </motion.div>

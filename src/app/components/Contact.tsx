@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { motion } from "motion/react";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from "lucide-react";

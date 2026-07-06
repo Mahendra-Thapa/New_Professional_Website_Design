@@ -1,5 +1,6 @@
+"use client";
 import { motion } from "motion/react";
-import { Link } from "react-router";
+import Link from "next/link";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 import { PRODUCTS } from "../data";
@@ -38,11 +39,15 @@ export function ProductsSection() {
             >
               {/* IMAGE */}
               <div className="relative h-40 sm:h-44 md:h-52 overflow-hidden bg-slate-100">
-                <img
-                  src={p.img}
-                  alt={p.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+                {p.img ? (
+                  <img
+                    src={p.img}
+                    alt={p.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-slate-200" />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/70 via-[#0A1628]/25 to-transparent" />
 
                 <span className="absolute top-3 sm:top-4 left-3 sm:left-4 inline-flex items-center gap-1.5 bg-white/95 text-[#0A1628] text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1 rounded-full shadow-sm">
@@ -75,7 +80,7 @@ export function ProductsSection() {
                 {/* ACTIONS */}
                 <div className="flex items-center justify-between border-t border-[#E2EAF4] pt-3 sm:pt-4 mt-auto">
                   <Link
-                    to="/products"
+                    href="/products"
                     className="inline-flex items-center gap-1.5 text-[#0D47A1] font-semibold text-xs sm:text-sm hover:gap-2.5 transition-all"
                   >
                     View Details
@@ -101,7 +106,7 @@ export function ProductsSection() {
         {/* CTA */}
         <div className="text-center">
           <Link
-            to="/products"
+            href="/products"
             className="inline-flex items-center gap-2 bg-[#0D47A1] hover:bg-[#1565C0] text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl transition-all hover:shadow-lg hover:shadow-blue-200 hover:-translate-y-0.5 text-sm sm:text-base"
           >
             Explore All Products <ArrowRight size={16} />

@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "motion/react";
 import { ArrowRight, Shield, Zap, Globe } from "lucide-react";
 

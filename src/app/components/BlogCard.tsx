@@ -1,5 +1,6 @@
+"use client";
 import { motion } from "motion/react";
-import { Link } from "react-router";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 interface Props {
@@ -74,7 +75,7 @@ export function BlogCard({
           <p className="text-[#5A7098] text-sm mb-3 line-clamp-2">{excerpt}</p>
         )}
         <Link
-          to={linkTo}
+          href={linkTo}
           className="inline-flex items-center gap-1.5 text-[#0D47A1] font-semibold text-sm group-hover:gap-3 transition-all"
         >
           Read More <ArrowRight size={13} />
