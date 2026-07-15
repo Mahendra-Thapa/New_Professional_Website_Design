@@ -532,7 +532,7 @@ export const PRODUCTS: Product[] = [
     desc: "A digital service marketplace that connects customers with verified service providers across education, health, IT, hospitality, travel, and other sectors with secure booking and service management.",
     tech: ["Next.js", "Node.js", "Express", "PostgreSQL", "GraphQL"],
     link: "https://karyantra.com/",
-    img: ""
+    img: "/projects/karyantra.png"
   },
   {
     slug: "esuchana-application",
@@ -541,17 +541,17 @@ export const PRODUCTS: Product[] = [
     desc: "A municipal communication platform that helps residents report issues, access information, and improve interaction between citizens and local government authorities.",
     tech: ["React", "Java", "PostgreSQL"],
     link: "https://gulmikaligandaki.gunasho.com/",
-    img: ""
+    img: "/projects/resunga.png"
   },
-  {
-    slug: "living-care",
-    name: "Living Care",
-    tag: "Web",
-    desc: "An agriculture and e-commerce platform that promotes natural products, supports local farmers, and provides online retail and bulk ordering services.",
-    tech: ["Flutter", "Java", "AWS", "Next.js", "PostgreSQL"],
-    link: "https://amalabotonline.com/",
-    img: ""
-  },
+  // {
+  //   slug: "living-care",
+  //   name: "Living Care",
+  //   tag: "Web",
+  //   desc: "An agriculture and e-commerce platform that promotes natural products, supports local farmers, and provides online retail and bulk ordering services.",
+  //   tech: ["Flutter", "Java", "AWS", "Next.js", "PostgreSQL"],
+  //   link: "https://amalabotonline.com/",
+  //   img: ""
+  // },
   {
     slug: "moksha",
     name: "Moksha Astrology",
@@ -570,24 +570,24 @@ export const PRODUCTS: Product[] = [
     link: "https://etechintl.com.np/home/",
     img: "/projects/Etech.png"
   },
-  {
-    slug: "rotary-club-tripureswar",
-    name: "Rotary Club of Tripureswar",
-    tag: "Web",
-    desc: "A professional website developed to showcase organization activities, information, events, and community initiatives.",
-    tech: ["WordPress", "PHP", "MySQL"],
-    link: "",
-    img: ""
-  },
-  {
-    slug: "forward-nepal",
-    name: "Forward Nepal",
-    tag: "Web",
-    desc: "A non-profit organization website focused on sustainable development, poverty reduction, agriculture, community empowerment, and social inclusion programs.",
-    tech: ["WordPress", "PHP", "MySQL"],
-    link: "https://forwardnepal.com.np/",
-    img: ""
-  },
+  // {
+  //   slug: "rotary-club-tripureswar",
+  //   name: "Rotary Club of Tripureswar",
+  //   tag: "Web",
+  //   desc: "A professional website developed to showcase organization activities, information, events, and community initiatives.",
+  //   tech: ["WordPress", "PHP", "MySQL"],
+  //   link: "",
+  //   img: ""
+  // },
+  // {
+  //   slug: "forward-nepal",
+  //   name: "Forward Nepal",
+  //   tag: "Web",
+  //   desc: "A non-profit organization website focused on sustainable development, poverty reduction, agriculture, community empowerment, and social inclusion programs.",
+  //   tech: ["WordPress", "PHP", "MySQL"],
+  //   link: "https://forwardnepal.com.np/",
+  //   img: ""
+  // },
   {
     slug: "kagosida",
     name: "KAGOSIDA",
@@ -597,15 +597,15 @@ export const PRODUCTS: Product[] = [
     link: "https://kagosida.org.np/",
     img: "/projects/Kagosita.png"
   },
-  {
-    slug: "awaaz-kendra",
-    name: "Aawaz Kendra",
-    tag: "Web",
-    desc: "A non-profit organization website supporting awareness, advocacy, and services related to women and child protection.",
-    tech: ["WordPress", "PHP", "MySQL"],
-    link: "https://awaazkendra.com/",
-    img: ""
-  },
+  // {
+  //   slug: "awaaz-kendra",
+  //   name: "Aawaz Kendra",
+  //   tag: "Web",
+  //   desc: "A non-profit organization website supporting awareness, advocacy, and services related to women and child protection.",
+  //   tech: ["WordPress", "PHP", "MySQL"],
+  //   link: "https://awaazkendra.com/",
+  //   img: ""
+  // },
   {
     slug: "all-nepal-khabar",
     name: "All Nepal Khabar",
@@ -633,24 +633,24 @@ export const PRODUCTS: Product[] = [
     link: "https://www.devanasoft.com.np/",
     img: "/projects/devanaasoft.png"
   },
-  {
-    slug: "kantipur-security",
-    name: "Kantipur Security",
-    tag: "Web",
-    desc: "A corporate website for a leading private security company providing security services, staffing, facility management, and training solutions.",
-    tech: ["WordPress", "PHP", "MySQL"],
-    link: "",
-    img: ""
-  },
-  {
-    slug: "msp-academy",
-    name: "MSP Academy",
-    tag: "Web",
-    desc: "An educational platform connecting learners, creators, and professionals through practical learning and technology-driven education.",
-    tech: ["Next.js"],
-    link: "https://mspacademy.co",
-    img: ""
-  },
+  // {
+  //   slug: "kantipur-security",
+  //   name: "Kantipur Security",
+  //   tag: "Web",
+  //   desc: "A corporate website for a leading private security company providing security services, staffing, facility management, and training solutions.",
+  //   tech: ["WordPress", "PHP", "MySQL"],
+  //   link: "",
+  //   img: ""
+  // },
+  // {
+  //   slug: "msp-academy",
+  //   name: "MSP Academy",
+  //   tag: "Web",
+  //   desc: "An educational platform connecting learners, creators, and professionals through practical learning and technology-driven education.",
+  //   tech: ["Next.js"],
+  //   link: "https://mspacademy.co",
+  //   img: ""
+  // },
   {
     slug: "mentor-lab-nepal",
     name: "Mentor Lab Nepal",
@@ -660,15 +660,15 @@ export const PRODUCTS: Product[] = [
     link: "https://mentorlabnepal.com/",
     img: "/projects/Mentor.png"
   },
-  {
-    slug: "forward-khabar",
-    name: "Forward Khabar",
-    tag: "Web",
-    desc: "A modern news portal covering current events, politics, business, technology, culture, and sports.",
-    tech: ["WordPress", "PHP", "MySQL"],
-    link: "https://forwardkhabar.com/",
-    img: ""
-  },
+  // {
+  //   slug: "forward-khabar",
+  //   name: "Forward Khabar",
+  //   tag: "Web",
+  //   desc: "A modern news portal covering current events, politics, business, technology, culture, and sports.",
+  //   tech: ["WordPress", "PHP", "MySQL"],
+  //   link: "https://forwardkhabar.com/",
+  //   img: ""
+  // },
   {
     slug: "batika-news",
     name: "Batika News",
