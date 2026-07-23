@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "MSP Solution - Professional IT & Tech Services",
   description: "MSP Solution offers comprehensive IT services, software development, and digital transformation for businesses. Contact us: info@mspsolution.com.np | Phone: +977 9867143463 | Subidhanagar, Kathmandu.",
   keywords: "MSP Solution, IT services, software development, Kathmandu, Subidhanagar, web development, app development",
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({
