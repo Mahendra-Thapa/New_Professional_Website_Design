@@ -20,6 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      {/* testing */}
       <body className="antialiased">
         <div className="min-h-screen bg-background flex flex-col">
           <Navbar />
