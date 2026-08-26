@@ -17,7 +17,7 @@ const PERKS = [
   { icon: Briefcase, title: "Growth Opportunities", desc: "Clear career paths and mentorship from industry experts." },
   { icon: Users, title: "Collaborative Culture", desc: "Work alongside passionate engineers and designers every day." },
   { icon: Zap, title: "Cutting-edge Stack", desc: "Build with the latest technologies in cloud, mobile, and web." },
-  { icon: Heart, title: "Work-Life Balance", desc: "Flexible hours and a supportive, people-first environment." },
+  { icon: Heart, title: "Work-Life Balance.", desc: "Flexible hours and a supportive, people-first environment." },
 ];
 
 export default function Career() {
